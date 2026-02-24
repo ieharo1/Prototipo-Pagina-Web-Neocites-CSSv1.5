@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>💰 Crypto Dashboard</h2>
+                <div class="theme-switch-wrapper">
+                    <span class="theme-icon sun">☀️</span>
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <span class="theme-icon moon">🌙</span>
+                </div>
+            </div>
+            <div class="filters">
+                <!-- Crypto filters will be dynamically added here -->
+            </div>
+            <button id="refresh-button" class="refresh-button">Refrescar</button>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Dashboard de Criptomonedas</h1>
+            </header>
+            <section class="crypto-cards">
+                <!-- Crypto cards will be dynamically added here -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Sección de Guía para Principiantes -->
+    <section class="crypto-guide">
+        <div class="guide-container">
+            <h2>📚 Guía para Principiantes</h2>
+            <p class="guide-intro">¿Nuevo en criptomonedas? Aquí te explicamos qué significa cada dato para que puedas invertir con conocimiento.</p>
+            
+            <div class="guide-grid">
+                <div class="guide-card">
+                    <h3>💰 Precio</h3>
+                    <p>El valor actual de una criptomoneda en dólares. ¡Cambia constantemente!</p>
+                </div>
+                <div class="guide-card">
+                    <h3>📈 Cambio 24h</h3>
+                    <p>Cuánto ha subido o baixado el precio en las últimas 24 horas. <span class="green">Verde</span> = suba, <span class="red">rojo</span> = baixa.</p>
+                </div>
+                <div class="guide-card">
+                    <h3>📊 Market Cap</h3>
+                    <p>Valor total de todas las monedas en circulación. Se calcula: <em>Precio × Cantidad de monedas</em>.</p>
+                </div>
+                <div class="guide-card">
+                    <h3>🔥 Volumen 24h</h3>
+                    <p>Cuánto dinero se ha tradedo (comprado/vendido) en las últimas 24 horas. ¡Indica popularidad!</p>
+                </div>
+                <div class="guide-card">
+                    <h3>🏔️ ATH (Máximo Histórico)</h3>
+                    <p>El precio más alto que esa criptomoneda ha alcanzado alguna vez.</p>
+                </div>
+                <div class="guide-card">
+                    <h3>⬇️ ATL (Mínimo Histórico)</h3>
+                    <p>El precio más bajo que esa criptomoneda ha alcanzado alguna vez.</p>
+                </div>
+                <div class="guide-card">
+                    <h3>📉 Gráfico de Tendencia</h3>
+                    <p>Muestra la evolución del precio en los últimos 7 días. ¡Sube = buena señal!</p>
+                </div>
+                <div class="guide-card">
+                    <h3>⚠️ Alertas y Umbral</h3>
+                    <p>Si el precio cambia mucho, la tarjeta brillará para avisarte. <br>El <strong>Umbral</strong> es el porcentaje que defines para recibir alertas (por defecto 5%).</p>
+                </div>
+            </div>
+
+            <div class="guide-tip">
+                <h3>💡 Consejo</h3>
+                <p>Invertir en criptomonedas es arriesgado. Nunca inviertas más de lo que puedas perder. Investiga siempre antes de comprar.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</p>
+        <p>Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+        <p>📧 Email: zackharo1@gmail.com | 📱 WhatsApp: 098805517 | 💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">https://github.com/ieharo1</a> | 🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">https://ieharo1.github.io/portafolio-isaac.haro/</a></p>
+        <p>© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
